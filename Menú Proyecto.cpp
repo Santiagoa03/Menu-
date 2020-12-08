@@ -131,7 +131,7 @@ short menuPunto4(){
 }
 
 int main(int argc, char** argv) {
-	short opcion,opcionPunto1, opcionPunto2,opcionPunto3,opcionPunto4;
+	short opcion,opcionPunto1, opcionPunto2,opcionPunto3,opcionPunto4,opcionPunto5;
 	int i,TamP,y,x,n,m,r;
 	
 
@@ -273,6 +273,9 @@ int main(int argc, char** argv) {
 					system("pause");break;
 				
 				case 5: 
+					
+					system("pause");break;
+				case 6: 
 					cout<<"\n **************************************************";
 					cout<<"\n |           	  PROCESO TERMINADO                |";
 					cout<<"\n |               HASTA LA PROXIMA!!               |";
