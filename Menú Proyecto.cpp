@@ -1,8 +1,8 @@
 /********************************************************************************************
 * -Proyecto Pilas, Colas y Recursividad                                                                   *
 * -Grupo de trabajo:                                                         *
-* -Fecha de creación: 04/12/2020                                                           *
-* -Última modificación:                                                          *
+* -Fecha de creaciÃ³n: 04/12/2020                                                           *
+* -Ãšltima modificaciÃ³n:                                                          *
 * -Compilado usando TDM-GCC 4.9.2                                                           *                                                                                 *
 *********************************************************************************************/
 
@@ -10,27 +10,27 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "MetodosColas.cpp"
-#include "MetodosPilas.cpp"
-#include "8_TIPO_3.cpp"
+#include "ClaseCola.h"
+#include "ClasePila.h"
 using namespace std;
 short MENU(){
 	short opc;
 	system("cls");
 	system("color 20");
-	cout << "\n\t*****************************************************" << endl;
-	cout << "\t|            MENU PILAS, COLAS Y RECURSIVIDAD        |" << endl;
-	cout << "\t*****************************************************" << endl;
-	cout << "\t|  (1)  |  EJERCICIO NUMERO 8  TIPO 1                |" << endl;
-	cout << "\t|  (2)  |  EJERCICIO NUMERO 8  TIPO 2                |" << endl;
-	cout << "\t|  (3)  |  EJERCICIO NUMERO 12 TIPO 2                |" << endl;
-	cout << "\t|  (4)  |  EJERCICIO NUMERO 8  TIPO 3                |" << endl;
-	cout << "\t|  (5)  |  TERMINAR                                  |" << endl;
-	cout << "\t*****************************************************" << endl;
+	cout << "\n\t******************************************************************************" << endl;
+	cout << "\t|                                     MENU PROYECTO                            |" << endl;
+	cout << "\t********************************************************************************" << endl;
+	cout << "\t|  (1)  |  CONVERTIR UNA LISTA CIRCULAR CON NODO DE ENCABEZAMIENTO EN COLA     |" << endl;
+	cout << "\t|  (2)  |  CONVERTIR UNA LISTA LINEAL EN PILA              			  |" << endl;
+	cout << "\t|  (3)  |  INTERCALAR DOS COLAS                                  		  |" << endl;
+	cout << "\t|  (4)  |  CONVERTIR COLA EN PILA MANTENIENDO ORDEN DE SALIDA                  |" << endl;
+	cout << "\t|  (5)  |  CONVERTIR PILA EN COLA                                              |" << endl;
+	cout << "\t|  (6)  |  TERMINAR                                                            |" << endl;
+	cout << "\t********************************************************************************" << endl;
 	cout << "\n";
 	cout << "\tIngrese la opcion deseada: ";
 	cin >> opc;
-	while(opc < 1 || opc > 5)
+	while(opc < 1 || opc > 6)
 	{
 		cout << "\a";
 		cout << "\n\tValor no valido, ingrese otra vez la opcion: ";
@@ -145,7 +145,7 @@ int main(int argc, char** argv) {
 						opcionPunto1 = menuPunto1();
 						switch(opcionPunto1){
 							case 1:
-								cout<<"\nTAMAÑO DE LA PILA: ";cin>>TamP;				
+								cout<<"\nTAMAÃ‘O DE LA PILA: ";cin>>TamP;				
 								Pila A(TamP);
 								Cola R(Tamp);
 								for(i=1;i<=TamP;i++){
@@ -206,9 +206,9 @@ int main(int argc, char** argv) {
 						
 							case 1: 
 								int TamC1, TamC2;
-								cout<<"\nTAMAÑO DE LA COLA 1 : ";cin>>TamC1;				
+								cout<<"\nTAMAÃ‘O DE LA COLA 1 : ";cin>>TamC1;				
 								Cola C1(TamC1);
-								cout<<"\nTAMAÑO DE LA COLA 2 : ";cin>>TamC2;
+								cout<<"\nTAMAÃ‘O DE LA COLA 2 : ";cin>>TamC2;
 								Cola C2(TamC2);
 								Cola R(C1.GetLimite()+C2.GetLimite()+2);
 					
