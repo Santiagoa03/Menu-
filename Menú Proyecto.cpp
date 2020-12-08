@@ -44,10 +44,10 @@ short menuPunto1(){
 	system("cls");
 	system("color 20");
 	cout << "\n\t****************************************************************************" << endl;
-	cout << "\t|                          MENU EJERCICIO 8 TIPO 1                         |" << endl;
+	cout << "\t|                              MENU EJERCICIO 1                            |" << endl;
 	cout << "\t****************************************************************************" << endl;
-	cout << "\t|  (1)  |  INSERTAR DATOS EN LA PILA                                       |" << endl;
-	cout << "\t|  (2)  |  RETORNAR COLA                                                   |" << endl;
+	cout << "\t|  (1)  |  INSERTAR DATOS EN LA LISTA                                      |" << endl;
+	cout << "\t|  (2)  |  CONVERTIR LISTA EN COLA                                         |" << endl;
 	cout << "\t|  (3)  |  TERMINAR                                                        |" << endl;
 	cout << "\t****************************************************************************" << endl;
 	cout << "\n";
@@ -67,18 +67,16 @@ short menuPunto2(){
 	system("cls");
 	system("color 20");
 	cout << "\n\t***********************************************************" << endl;
-	cout << "\t|                  MENU EJERCICIO 8 TIPO 2                |" << endl;
+	cout << "\t|                       MENU EJERCICIO 2                  |" << endl;
 	cout << "\t***********************************************************" << endl;
-	cout << "\t|  (1)  |                                				 |" << endl;
-	cout << "\t|  (2)  |                                                 |" << endl;
-	cout << "\t|  (3)  |                                                 |" << endl;
-	cout << "\t|  (4)  |                                                 |" << endl;
-	cout << "\t|  (5)  |                                                 |" << endl;
+	cout << "\t|  (1)  |  INSERTAR DATOS EN LA LISTA               	     |" << endl;
+	cout << "\t|  (2)  |  CONVERTIR LISTA EN PILA                        |" << endl;
+	cout << "\t|  (3)  |  TERMINAR                                       |" << endl;
 	cout << "\t***********************************************************" << endl;
 	cout << "\n";
 	cout << "\tIngrese la opcion deseada: ";
 	cin >> opc;
-	while(opc < 1 || opc > 5)
+	while(opc < 1 || opc > 3)
 	{
 		cout << "\a";
 		cout << "\n\tValor no valido, ingrese otra vez la opcion: ";
