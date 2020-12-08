@@ -112,15 +112,16 @@ short menuPunto4(){
 	system("cls");
 	system("color 20");
 	cout << "\n\t****************************************************************************" << endl;
-	cout << "\t|                         MENU EJERCICIO 8 TIPO 3                          |" << endl;
+	cout << "\t|                         MENU EJERCICIO 4                                 |" << endl;
 	cout << "\t****************************************************************************" << endl;
-	cout << "\t|  (1)  |  ENCONTRAR EL MCD                                                |" << endl;
-	cout << "\t|  (2)  |  TERMINAR                                                        |" << endl;
+	cout << "\t|  (1)  |  INGRESAR DATOS A LA COLA                                        |" << endl;
+	cout << "\t|  (2)  |  CONVERTIR COLA EN PILA (CON ORDEN DE SALIDA)                    |" << endl;
+	cout << "\t|  (3)  |  TERMINAR                                                        |" << endl;
 	cout << "\t****************************************************************************" << endl;
 	cout << "\n";
 	cout << "\tIngrese la opcion deseada: ";
 	cin >> opc;
-	while(opc < 1 || opc > 2)
+	while(opc < 1 || opc > 3)
 	{
 		cout << "\a";
 		cout << "\n\tValor no valido, ingrese otra vez la opcion: ";
