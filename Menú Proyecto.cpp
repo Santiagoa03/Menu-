@@ -44,10 +44,10 @@ short menuPunto1(){
 	system("cls");
 	system("color 20");
 	cout << "\n\t****************************************************************************" << endl;
-	cout << "\t|                          MENU EJERCICIO 8 TIPO 1                         |" << endl;
+	cout << "\t|                              MENU EJERCICIO 1                            |" << endl;
 	cout << "\t****************************************************************************" << endl;
-	cout << "\t|  (1)  |  INSERTAR DATOS EN LA PILA                                       |" << endl;
-	cout << "\t|  (2)  |  RETORNAR COLA                                                   |" << endl;
+	cout << "\t|  (1)  |  INSERTAR DATOS EN LA LISTA                                      |" << endl;
+	cout << "\t|  (2)  |  CONVERTIR LISTA EN COLA                                         |" << endl;
 	cout << "\t|  (3)  |  TERMINAR                                                        |" << endl;
 	cout << "\t****************************************************************************" << endl;
 	cout << "\n";
@@ -67,18 +67,16 @@ short menuPunto2(){
 	system("cls");
 	system("color 20");
 	cout << "\n\t***********************************************************" << endl;
-	cout << "\t|                  MENU EJERCICIO 8 TIPO 2                |" << endl;
+	cout << "\t|                       MENU EJERCICIO 2                  |" << endl;
 	cout << "\t***********************************************************" << endl;
-	cout << "\t|  (1)  |                                				 |" << endl;
-	cout << "\t|  (2)  |                                                 |" << endl;
-	cout << "\t|  (3)  |                                                 |" << endl;
-	cout << "\t|  (4)  |                                                 |" << endl;
-	cout << "\t|  (5)  |                                                 |" << endl;
+	cout << "\t|  (1)  |  INSERTAR DATOS EN LA LISTA               	     |" << endl;
+	cout << "\t|  (2)  |  CONVERTIR LISTA EN PILA                        |" << endl;
+	cout << "\t|  (3)  |  TERMINAR                                       |" << endl;
 	cout << "\t***********************************************************" << endl;
 	cout << "\n";
 	cout << "\tIngrese la opcion deseada: ";
 	cin >> opc;
-	while(opc < 1 || opc > 5)
+	while(opc < 1 || opc > 3)
 	{
 		cout << "\a";
 		cout << "\n\tValor no valido, ingrese otra vez la opcion: ";
@@ -90,8 +88,8 @@ short menuPunto3(){
 	short opc;
 	system("cls");
 	system("color 20");
-	cout << "\n\t**************************************************************************** << endl;
-	cout << \t|                         MENU INTERCALAR 2 COLAS:   EJERCICIO 3		| 	 << endl;
+	cout << "\n\t****************************************************************************" << endl;
+	cout << "\t|                         MENU EJERCICIO 12 TIPO 2                         |" << endl;
 	cout << "\t****************************************************************************" << endl;
 	cout << "\t|  (1)  |  INSERTAR DATOS DE LAS COLAS                                     |" << endl;
 	cout << "\t|  (2)  |  COLA RESULTANTE                                                 |" << endl;
@@ -114,15 +112,16 @@ short menuPunto4(){
 	system("cls");
 	system("color 20");
 	cout << "\n\t****************************************************************************" << endl;
-	cout << "\t|                         MENU EJERCICIO 8 TIPO 3                          |" << endl;
+	cout << "\t|                         MENU EJERCICIO 4                                 |" << endl;
 	cout << "\t****************************************************************************" << endl;
-	cout << "\t|  (1)  |  ENCONTRAR EL MCD                                                |" << endl;
-	cout << "\t|  (2)  |  TERMINAR                                                        |" << endl;
+	cout << "\t|  (1)  |  INGRESAR DATOS A LA COLA                                        |" << endl;
+	cout << "\t|  (2)  |  CONVERTIR COLA EN PILA (CON ORDEN DE SALIDA)                    |" << endl;
+	cout << "\t|  (3)  |  TERMINAR                                                        |" << endl;
 	cout << "\t****************************************************************************" << endl;
 	cout << "\n";
 	cout << "\tIngrese la opcion deseada: ";
 	cin >> opc;
-	while(opc < 1 || opc > 2)
+	while(opc < 1 || opc > 3)
 	{
 		cout << "\a";
 		cout << "\n\tValor no valido, ingrese otra vez la opcion: ";
@@ -132,7 +131,7 @@ short menuPunto4(){
 }
 
 int main(int argc, char** argv) {
-	short opcion,opcionPunto1, opcionPunto2,opcionPunto3,opcionPunto4;
+	short opcion,opcionPunto1, opcionPunto2,opcionPunto3,opcionPunto4,opcionPunto5;
 	int i,TamP,y,x,n,m,r;
 	
 
@@ -274,6 +273,9 @@ int main(int argc, char** argv) {
 					system("pause");break;
 				
 				case 5: 
+					
+					system("pause");break;
+				case 6: 
 					cout<<"\n **************************************************";
 					cout<<"\n |           	  PROCESO TERMINADO                |";
 					cout<<"\n |               HASTA LA PROXIMA!!               |";
